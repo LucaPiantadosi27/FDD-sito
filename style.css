@@ -2250,6 +2250,9 @@ img {
 /* :: 22.0 Sidebar Area CSS */
 @media only screen and (max-width: 767px) {
   .post-sidebar-area {
+     -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-y: hidden !important;
     margin-top: 100px; } }
 
 .single-widget-area {

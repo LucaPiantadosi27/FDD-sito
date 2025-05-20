@@ -2684,6 +2684,7 @@ img {
 /* :: 22.0 Sidebar Area CSS */
 
 .post-sidebar-area {
+    overflow-y: hidden; 
     @media #{$breakpoint-xs} {
         margin-top: 100px;
     }
