@@ -1,873 +1,1255 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
     <title>FDD</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="img/core-img/favicon.ico" />
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<style>
+  <style>
     html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 100px; /* Aggiunge spazio sopra il titolo quando si clicca su un link */
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px; /* Aggiunge spazio sopra il titolo quando si clicca su un link */
     }
 
     /* Assicura che tutte le sezioni con ID abbiano un padding-top adeguato */
     section[id] {
-        padding-top: 20px;
+      padding-top: 20px;
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="preloader-circle"></div>
-        <div class="preloader-img">
-            <img src="img/core-img/leaf.png" alt="">
-        </div>
+      <div class="preloader-circle"></div>
+      <div class="preloader-img">
+        <img src="img/core-img/leaf.png" alt="" />
+      </div>
     </div>
 
     <header class="header-area">
-
-        <div class="top-header-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="top-header-content d-flex align-items-center justify-content-between">
-                            <div class="top-header-metas">
-                                <div class="social-links">
-                                    <a href="#" style="display: inline-block; margin-right: 10px;"><i class="fa fa-facebook" aria-hidden="true" style="color: rgb(112, 199, 69);"></i></a>
-                                    <a href="#" style="display: inline-block; margin-right: 10px;"><i class="fa fa-twitter" aria-hidden="true" style="color: rgb(112, 199, 69);"></i></a>
-                                    <a href="#" style="display: inline-block; margin-right: 10px;"><i class="fa fa-google-plus" aria-hidden="true" style="color: rgb(112, 199, 69);"></i></a>
-                                    <a href="#" style="display: inline-block; margin-right: 10px;"><i class="fa fa-instagram" aria-hidden="true" style="color: rgb(112, 199, 69);"></i></a>
-                                    <a href="#" style="display: inline-block; margin-right: 0;"><i class="fa fa-linkedin" aria-hidden="true" style="color: rgb(112, 199, 69);"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="top-header-meta d-flex">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infofdd@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: infofdd@example.com</span></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+39 223 456 7890"><i class="fa fa-phone" aria-hidden="true"></i> <span>Chiamaci: +39 123 456 7890</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="alazea-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
-
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt="Fiori del Deserto Logo"></a>
-
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <div class="classy-menu">
-
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <div class="classynav">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#funzionalita">Funzionalità</a></li>
-                                <li><a href="#chi-siamo">Chi Siamo</a></li>
-                                <li><a href="#scopri-app-fdd">App</a></li>
-                                <li><a href="#blog-area">News</a></li>
-                                <li><a href="#contact-area">Contatti</a></li>
-                            </ul>
-
-                            <div id="searchIcon">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                            </div>
-                    </nav>
-
-                    <div class="search-form">
-                        <form action="#" method="get">
-                            <input type="search" name="search" id="search" placeholder="Cerca nell'app...">
-                            <button type="submit" class="d-none"></button>
-                        </form>
-                        <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <section class="hero-area">
-        <div class="hero-post-slides owl-carousel">
-
-            <div class="single-hero-post bg-overlay">
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/1.jpg);"></div>
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12">
-                            <div class="hero-slides-content text-center">
-                                <h2>BENVENUTI TRA I FIORI DEL DESERTO</h2>
-                                <p>La tua guida interattiva per esplorare il mondo dei Monti Lattari. Conosci i sentieri, scopri le piante e i loro usi antichi attraverso la nostra PWA. Immergiti in un mondo di conoscenza verde per migliorare la tua vita!</p>
-                                <div class="welcome-btn-group">
-                                    <a href="https://fiorideldeserto.netlify.app/install-pwa" class="btn alazea-btn mr-30">Installa la PWA</a>
-                                    <!-- <a href="#funzionalita" class="btn alazea-btn active">Scopri di più</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-hero-post bg-overlay">
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/2.jpg);"></div>
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12">
-                            <div class="hero-slides-content text-center">
-                                <h2>Esplora. Identifica. Gioca.</h2>
-                                <p>Se sei appassionato di piante o è la prima volta che te ne interessi non importa: con noi ti sembrerà di averle sempre conosciute! 
-Lasciati coinvolgere dallo spirito dell’esploratore e arricchisci la tua esperienza con tanta conoscenza, antica e nuova!
-</p>
-                                <div class="welcome-btn-group">
-                                     <a href="https://fiorideldeserto.netlify.app/install-pwa" class="btn alazea-btn mr-30">Installa la PWA</a>
-                                    <!-- <a href="#chi-siamo" class="btn alazea-btn active">Chi Siamo</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section id="funzionalita" class="our-services-area bg-gray section-padding-100-0">
+      <div class="top-header-area">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Le Nostre Funzionalità</h2>
-                        <p>Scopri come arricchire la tua esperienza nel territorio dei Monti Lattari.</p>
-                    </div>
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="top-header-content d-flex align-items-center justify-content-between"
+              >
+                <div class="top-header-metas">
+                  <div class="social-links">
+                    <a
+                      href="#"
+                      style="display: inline-block; margin-right: 10px"
+                      ><i
+                        class="fa fa-facebook"
+                        aria-hidden="true"
+                        style="color: rgb(112, 199, 69)"
+                      ></i
+                    ></a>
+                    <a
+                      href="#"
+                      style="display: inline-block; margin-right: 10px"
+                      ><i
+                        class="fa fa-twitter"
+                        aria-hidden="true"
+                        style="color: rgb(112, 199, 69)"
+                      ></i
+                    ></a>
+                    <a
+                      href="#"
+                      style="display: inline-block; margin-right: 10px"
+                      ><i
+                        class="fa fa-google-plus"
+                        aria-hidden="true"
+                        style="color: rgb(112, 199, 69)"
+                      ></i
+                    ></a>
+                    <a
+                      href="#"
+                      style="display: inline-block; margin-right: 10px"
+                      ><i
+                        class="fa fa-instagram"
+                        aria-hidden="true"
+                        style="color: rgb(112, 199, 69)"
+                      ></i
+                    ></a>
+                    <a href="#" style="display: inline-block; margin-right: 0"
+                      ><i
+                        class="fa fa-linkedin"
+                        aria-hidden="true"
+                        style="color: rgb(112, 199, 69)"
+                      ></i
+                    ></a>
+                  </div>
                 </div>
+
+                <div class="top-header-meta d-flex">
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    title="infofdd@example.com"
+                    ><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span>Email: infofdd@example.com</span></a
+                  >
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    title="+39 223 456 7890"
+                    ><i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>Chiamaci: +39 123 456 7890</span></a
+                  >
+                </div>
+              </div>
             </div>
-
-            <div class="row justify-content-between">
-                <div class="col-12 col-lg-5">
-                    <div class="alazea-service-area mb-100">
-
-                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
-                            <div class="service-icon mr-30">
-                                <img src="img/core-img/s1.png" alt="Icona Mappa">
-                            </div>
-                            <div class="service-content">
-                                <h5 id="esplora">Esplora Percorsi Naturalistici</h5>
-                                <p>Segui le nostre mappe per visitare i punti migliori dei sentieri disponibili sui Monti Lattari: dai posti più turistici alle piccole gemme nascoste, con noi ti sembrerà di aver sempre conosciuto queste stupende montagne.</p>
-                            </div>
-                        </div>
-
-                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="300ms">
-                            <div class="service-icon mr-30">
-                                <img src="img/core-img/b1.png" alt="Icona Fotocamera">
-                            </div>
-                            <div class="service-content">
-                                <h5 id="identifica">Identificazione Fotografica</h5>
-                                <p>Scatta una foto ad una pianta e lascia che la tecnologia PlantNet ti aiuti ad identificarla.</p>
-                            </div>
-                        </div>
-
-                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms">
-                            <div class="service-icon mr-30">
-                                <img src="img/core-img/b3.png" alt="Icona Premio">
-                            </div>
-                            <div class="service-content">
-                                <h5 id="gamification">CONOSCENZE LOCALI E GIOCHI INTERATTIVI</h5>
-                                <p>Conosci meglio la flora locale e i suoi utilizzi grazie al tuo “Erbario”: riconoscendo il tipo e la quantità di piante giuste ti consentirà di sbloccare informazioni aggiuntive, e anche qualche piccolo premio!</p>
-                            </div>
-                        </div>
-
-                         <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="700ms">
-                            <div class="service-icon mr-30">
-                                <img src="img/core-img/b4.png" alt="Icona Offline"> </div>
-                            <div class="service-content">
-                                <h5 id="offline">Consultazione Dati Offline</h5>
-                                <p>Non lasciare che l’assenza di connessione ti lasci senza di noi: potrai consultare tutte le informazioni relative alle piante che hai identificato e non anche se non dovesse esserci copertura.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="alazea-video-area bg-overlay mb-100">
-                        <img src="img/bg-img/23.jpg" alt="Immagine promozionale Fiori del Deserto">
-                        </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="alazea-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container">
+            <nav class="classy-navbar justify-content-between" id="alazeaNav">
+              <a href="index.html" class="nav-brand"
+                ><img src="img/core-img/logo.png" alt="Fiori del Deserto Logo"
+              /></a>
+
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"
+                  ><span></span><span></span><span></span
+                ></span>
+              </div>
+
+              <div class="classy-menu">
+                <div class="classycloseIcon">
+                  <div class="cross-wrap">
+                    <span class="top"></span><span class="bottom"></span>
+                  </div>
+                </div>
+
+                <div class="classynav">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#funzionalita">Funzionalità</a></li>
+                    <li><a href="#chi-siamo">Chi Siamo</a></li>
+                    <li><a href="#scopri-app-fdd">App</a></li>
+                    <li><a href="#blog-area">News</a></li>
+                    <li><a href="#contact-area">Contatti</a></li>
+                  </ul>
+
+                  <div id="searchIcon">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+            <div class="search-form">
+              <form action="#" method="get">
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Cerca nell'app..."
+                />
+                <button type="submit" class="d-none"></button>
+              </form>
+              <div class="closeIcon">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-area">
+      <div class="hero-post-slides owl-carousel">
+        <div class="single-hero-post bg-overlay">
+          <div
+            class="slide-img bg-img"
+            style="background-image: url(img/bg-img/1.jpg)"
+          ></div>
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-12">
+                <div class="hero-slides-content text-center">
+                  <h2>BENVENUTI TRA I FIORI DEL DESERTO</h2>
+                  <p>
+                    La tua guida interattiva per esplorare il mondo dei Monti
+                    Lattari. Conosci i sentieri, scopri le piante e i loro usi
+                    antichi attraverso la nostra PWA. Immergiti in un mondo di
+                    conoscenza verde per migliorare la tua vita!
+                  </p>
+                  <div class="welcome-btn-group">
+                    <a
+                      href="https://fiorideldeserto.netlify.app/install-pwa"
+                      class="btn alazea-btn mr-30"
+                      >Installa la PWA</a
+                    >
+                    <!-- <a href="#funzionalita" class="btn alazea-btn active">Scopri di più</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-hero-post bg-overlay">
+          <div
+            class="slide-img bg-img"
+            style="background-image: url(img/bg-img/2.jpg)"
+          ></div>
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-12">
+                <div class="hero-slides-content text-center">
+                  <h2>Esplora. Identifica. Gioca.</h2>
+                  <p>
+                    Se sei appassionato di piante o è la prima volta che te ne
+                    interessi non importa: con noi ti sembrerà di averle sempre
+                    conosciute! Lasciati coinvolgere dallo spirito
+                    dell’esploratore e arricchisci la tua esperienza con tanta
+                    conoscenza, antica e nuova!
+                  </p>
+                  <div class="welcome-btn-group">
+                    <a
+                      href="https://fiorideldeserto.netlify.app/install-pwa"
+                      class="btn alazea-btn mr-30"
+                      >Installa la PWA</a
+                    >
+                    <!-- <a href="#chi-siamo" class="btn alazea-btn active">Chi Siamo</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="funzionalita"
+      class="our-services-area bg-gray section-padding-100-0"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center">
+              <h2>Le Nostre Funzionalità</h2>
+              <p>
+                Scopri come arricchire la tua esperienza nel territorio dei
+                Monti Lattari.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-5">
+            <div class="alazea-service-area mb-100">
+              <div
+                class="single-service-area d-flex align-items-center wow fadeInUp"
+                data-wow-delay="100ms"
+              >
+                <div class="service-icon mr-30">
+                  <img src="img/core-img/s1.png" alt="Icona Mappa" />
+                </div>
+                <div class="service-content">
+                  <h5 id="esplora">Esplora Percorsi Naturalistici</h5>
+                  <p>
+                    Segui le nostre mappe per visitare i punti migliori dei
+                    sentieri disponibili sui Monti Lattari: dai posti più
+                    turistici alle piccole gemme nascoste, con noi ti sembrerà
+                    di aver sempre conosciuto queste stupende montagne.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="single-service-area d-flex align-items-center wow fadeInUp"
+                data-wow-delay="300ms"
+              >
+                <div class="service-icon mr-30">
+                  <img src="img/core-img/b1.png" alt="Icona Fotocamera" />
+                </div>
+                <div class="service-content">
+                  <h5 id="identifica">Identificazione Fotografica</h5>
+                  <p>
+                    Scatta una foto ad una pianta e lascia che la tecnologia
+                    PlantNet ti aiuti ad identificarla.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="single-service-area d-flex align-items-center wow fadeInUp"
+                data-wow-delay="500ms"
+              >
+                <div class="service-icon mr-30">
+                  <img src="img/core-img/b3.png" alt="Icona Premio" />
+                </div>
+                <div class="service-content">
+                  <h5 id="gamification">
+                    CONOSCENZE LOCALI E GIOCHI INTERATTIVI
+                  </h5>
+                  <p>
+                    Conosci meglio la flora locale e i suoi utilizzi grazie al
+                    tuo “Erbario”: riconoscendo il tipo e la quantità di piante
+                    giuste ti consentirà di sbloccare informazioni aggiuntive, e
+                    anche qualche piccolo premio!
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="single-service-area d-flex align-items-center wow fadeInUp"
+                data-wow-delay="700ms"
+              >
+                <div class="service-icon mr-30">
+                  <img src="img/core-img/b4.png" alt="Icona Offline" />
+                </div>
+                <div class="service-content">
+                  <h5 id="offline">Consultazione Dati Offline</h5>
+                  <p>
+                    Non lasciare che l’assenza di connessione ti lasci senza di
+                    noi: potrai consultare tutte le informazioni relative alle
+                    piante che hai identificato e non anche se non dovesse
+                    esserci copertura.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="alazea-video-area bg-overlay mb-100">
+              <img
+                src="img/bg-img/23.jpg"
+                alt="Immagine promozionale Fiori del Deserto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="chi-siamo" class="about-us-area section-padding-100-0">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-12 col-lg-5">
-                    <div class="section-heading">
-                        <h2>RIGUARDO FIORI DEL DESERTO</h2>
-                        <p>Nata dalla passione per l’etnobotanica e l’innovazione tecnologica.</p>
-                    </div>
-                    <p>“Fiori del deserto” si pone come obbiettivo quello di salvaguardare le conoscenze locali tramandate per generazioni sugli usi medicinali ed alimentari delle specie selvatiche e coltivate. Nata come progetto di divulgazione portato avanti dalla Cooperativa Santa Lucia nell’ambito dell’inserimento socio-lavorativo di persone marginalizzate dalla socetà, il nostro obiettivo è quello di condividere queste conoscenze con tutti voi in modo da preservarle per le generazioni future. Il tuo aiuto è fondamentale per non perdere questo antico sapere!</p>
-
-                    <div class="alazea-progress-bar mb-50">
-                        <div class="single_progress_bar">
-                            <p>PASSIONE PER L’ETNOBOTANICA</p>
-                            <div id="bar1" class="barfiller">
-                                <div class="tipWrap">
-                                    <span class="tip"></span>
-                                </div>
-                                <span class="fill" data-percentage="95"></span>
-                            </div>
-                        </div>
-
-                        <div class="single_progress_bar">
-                            <p>COINVOLGIMENTO UTENTI </p>
-                            <div id="bar2" class="barfiller">
-                                <div class="tipWrap">
-                                    <span class="tip"></span>
-                                </div>
-                                <span class="fill" data-percentage="90"></span>
-                            </div>
-                        </div>
-
-                        <div class="single_progress_bar">
-                            <p>IMPLEMENTAZIONE TECNOLOGICA</p>
-                            <div id="bar3" class="barfiller">
-                                <div class="tipWrap">
-                                    <span class="tip"></span>
-                                </div>
-                                <span class="fill" data-percentage="85"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="alazea-benefits-area">
-                        <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <div class="single-benefits-area">
-                                    <img src="img/core-img/s3.png" alt="Icona Identificazione">
-                                    <h5>Identificazione Precisa</h5>
-                                    <p>Tramite il rionoscimento fotografico potrai conoscere meglio la flora che incontri</p>
-                                </div>
-                            </div>
-
-                             <div class="col-12 col-sm-6">
-                                <div class="single-benefits-area">
-                                    <img src="img/core-img/cf3.png" alt="Icona Offline">
-                                    <h5>Sempre Disponibile</h5>
-                                    <p>Porta le conoscenze locali tradizionali sempre con te: che tu abiti in Italia o ovunque nel mondo, che tu abbia o meno una connessione disponibile, la conoscenza che condividiamo con te sarà sempre a portata di mano grazie all’utilizzo offline disponibile per la PWA.</p>
-                                </div>
-                            </div>
-
-                            
-
-                            <div class="col-12 col-sm-6">
-                                <div class="single-benefits-area">
-                                    <img src="img/core-img/b3.png" alt="Icona Gamification">
-                                    <h5>Divertimento e Sfida</h5>
-                                    <p>Il sistema interattivo di collezionabili ti permetterà di conoscere meglio la flora locale ed i suoi usi senza dovere leggere lunghi trattati o articoli scientifici: le nostre informazioni sono raccolte dagli abitanti del posto e confezionate per essere pronte all’uso!</p>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-sm-6">
-                                <div class="single-benefits-area">
-                                    <img src="img/core-img/b2.png" alt="Icona Mappa Interattiva">
-                                    <h5>Esplorazione Guidata</h5>
-                                    <p>Con i nostri percorsi potrai migliorare la tua esplorazione del complesso dei Monti Lattari: non perdere i nostri punti di interesse personalizzati per farti vivere l’esperienza come un abitante del posto!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-5">
+            <div class="section-heading">
+              <h2>RIGUARDO FIORI DEL DESERTO</h2>
+              <p>
+                Nata dalla passione per l’etnobotanica e l’innovazione
+                tecnologica.
+              </p>
             </div>
-        </div>
+            <p>
+              “Fiori del deserto” si pone come obbiettivo quello di
+              salvaguardare le conoscenze locali tramandate per generazioni
+              sugli usi medicinali ed alimentari delle specie selvatiche e
+              coltivate. Nata come progetto di divulgazione portato avanti dalla
+              Cooperativa Santa Lucia nell’ambito dell’inserimento
+              socio-lavorativo di persone marginalizzate dalla socetà, il nostro
+              obiettivo è quello di condividere queste conoscenze con tutti voi
+              in modo da preservarle per le generazioni future. Il tuo aiuto è
+              fondamentale per non perdere questo antico sapere!
+            </p>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="border-line"></div>
+            <div class="alazea-progress-bar mb-50">
+              <div class="single_progress_bar">
+                <p>PASSIONE PER L’ETNOBOTANICA</p>
+                <div id="bar1" class="barfiller">
+                  <div class="tipWrap">
+                    <span class="tip"></span>
+                  </div>
+                  <span class="fill" data-percentage="95"></span>
                 </div>
+              </div>
+
+              <div class="single_progress_bar">
+                <p>COINVOLGIMENTO UTENTI</p>
+                <div id="bar2" class="barfiller">
+                  <div class="tipWrap">
+                    <span class="tip"></span>
+                  </div>
+                  <span class="fill" data-percentage="90"></span>
+                </div>
+              </div>
+
+              <div class="single_progress_bar">
+                <p>IMPLEMENTAZIONE TECNOLOGICA</p>
+                <div id="bar3" class="barfiller">
+                  <div class="tipWrap">
+                    <span class="tip"></span>
+                  </div>
+                  <span class="fill" data-percentage="85"></span>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="alazea-benefits-area">
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="single-benefits-area">
+                    <img
+                      src="img/core-img/s3.png"
+                      alt="Icona Identificazione"
+                    />
+                    <h5>Identificazione Precisa</h5>
+                    <p>
+                      Tramite il rionoscimento fotografico potrai conoscere
+                      meglio la flora che incontri
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="single-benefits-area">
+                    <img src="img/core-img/cf3.png" alt="Icona Offline" />
+                    <h5>Sempre Disponibile</h5>
+                    <p>
+                      Porta le conoscenze locali tradizionali sempre con te: che
+                      tu abiti in Italia o ovunque nel mondo, che tu abbia o
+                      meno una connessione disponibile, la conoscenza che
+                      condividiamo con te sarà sempre a portata di mano grazie
+                      all’utilizzo offline disponibile per la PWA.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="single-benefits-area">
+                    <img src="img/core-img/b3.png" alt="Icona Gamification" />
+                    <h5>Divertimento e Sfida</h5>
+                    <p>
+                      Il sistema interattivo di collezionabili ti permetterà di
+                      conoscere meglio la flora locale ed i suoi usi senza
+                      dovere leggere lunghi trattati o articoli scientifici: le
+                      nostre informazioni sono raccolte dagli abitanti del posto
+                      e confezionate per essere pronte all’uso!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="single-benefits-area">
+                    <img
+                      src="img/core-img/b2.png"
+                      alt="Icona Mappa Interattiva"
+                    />
+                    <h5>Esplorazione Guidata</h5>
+                    <p>
+                      Con i nostri percorsi potrai migliorare la tua
+                      esplorazione del complesso dei Monti Lattari: non perdere
+                      i nostri punti di interesse personalizzati per farti
+                      vivere l’esperienza come un abitante del posto!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="border-line"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-<section id="team-area" class="team-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading -->
-                    <div class="section-heading text-center">
-                        <h2>IL NOSTRO GRUPPO DI LAVORO</h2>
-                        <p>La squadra che ogni giorno coltiva innovazione (e piante) per la tua esperienza nella natura</p>
-                    </div>
-                </div>
+    <section id="team-area" class="team-area section-padding-100-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Section Heading -->
+            <div class="section-heading text-center">
+              <h2>IL NOSTRO GRUPPO DI LAVORO</h2>
+              <p>
+                La squadra che ogni giorno coltiva innovazione (e piante) per la
+                tua esperienza nella natura
+              </p>
             </div>
-
-            <div class="row">
-
-                <!-- Single Team Member Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member text-center mb-100">
-                        <!-- Team Member Thumb -->
-                        <div class="team-member-thumb">
-                            <img src="img/bg-img/team1.png" alt="">
-                            <!-- Social Info -->
-                            <div class="team-member-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info mt-30">
-                            <h5>ADELE CAFIERO</h5>
-                            <p>Direttrice della cooperativa</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Team Member Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member text-center mb-100">
-                        <!-- Team Member Thumb -->
-                        <div class="team-member-thumb">
-                            <img src="img/bg-img/team2.png" alt="">
-                            <!-- Social Info -->
-                            <div class="team-member-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info mt-30">
-                            <h5>CATELLO DE CESARE</h5>
-                            <p>Biologo e socio della cooperativa, responsabile dela ricerca etnobotanica</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Team Member Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member text-center mb-100">
-                        <!-- Team Member Thumb -->
-                        <div class="team-member-thumb">
-                            <img src="img/bg-img/team3.png" alt="">
-                            <!-- Social Info -->
-                            <div class="team-member-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info mt-30">
-                            <h5>SALVATORE DI SOMMA</h5>
-                            <p>Agronomo e socio della cooperativa, responsabile coltivazione ed identificazione</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Team Member Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member text-center mb-100">
-                        <!-- Team Member Thumb -->
-                        <div class="team-member-thumb">
-                            <img src="img/bg-img/team4.png" alt="">
-                            <!-- Social Info -->
-                            <div class="team-member-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Member Info -->
-                        <div class="team-member-info mt-30">
-                            <h5>Lorem, ipsum </h5>
-                            <p>Marketer</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
+
+        <div class="row">
+          <!-- Single Team Member Area -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single-team-member text-center mb-100">
+              <!-- Team Member Thumb -->
+              <div class="team-member-thumb">
+                <img src="img/bg-img/team1.png" alt="" />
+                <!-- Social Info -->
+                <div class="team-member-social-info">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- Team Member Info -->
+              <div class="team-member-info mt-30">
+                <h5>ADELE CAFIERO</h5>
+                <p>Direttrice della cooperativa</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Team Member Area -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single-team-member text-center mb-100">
+              <!-- Team Member Thumb -->
+              <div class="team-member-thumb">
+                <img src="img/bg-img/team2.png" alt="" />
+                <!-- Social Info -->
+                <div class="team-member-social-info">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- Team Member Info -->
+              <div class="team-member-info mt-30">
+                <h5>CATELLO DE CESARE</h5>
+                <p>
+                  Biologo e socio della cooperativa, responsabile dela ricerca
+                  etnobotanica
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Team Member Area -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single-team-member text-center mb-100">
+              <!-- Team Member Thumb -->
+              <div class="team-member-thumb">
+                <img src="img/bg-img/team3.png" alt="" />
+                <!-- Social Info -->
+                <div class="team-member-social-info">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- Team Member Info -->
+              <div class="team-member-info mt-30">
+                <h5>SALVATORE DI SOMMA</h5>
+                <p>
+                  Agronomo e socio della cooperativa, responsabile coltivazione
+                  ed identificazione
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Team Member Area -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single-team-member text-center mb-100">
+              <!-- Team Member Thumb -->
+              <div class="team-member-thumb">
+                <img src="img/bg-img/team4.png" alt="" />
+                <!-- Social Info -->
+                <div class="team-member-social-info">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- Team Member Info -->
+              <div class="team-member-info mt-30">
+                <h5>Lorem, ipsum</h5>
+                <p>Marketer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="scopri-app-fdd" class="alazea-portfolio-area section-padding-100-0 pt-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Scopri l'App Fiori del Deserto</h2>
-                        <p>Dai un'occhiata ad alcune schermate e funzionalità della nostra PWA.</p>
-                    </div>
-                </div>
+    <section
+      id="scopri-app-fdd"
+      class="alazea-portfolio-area section-padding-100-0 pt-0"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center">
+              <h2>Scopri l'App Fiori del Deserto</h2>
+              <p>
+                Dai un'occhiata ad alcune schermate e funzionalità della nostra
+                PWA.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="container-fluid">
-            <div class="row alazea-portfolio">
-
-                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp" data-wow-delay="100ms">
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/core-img/map.jpeg);"></div>
-                    <div class="portfolio-hover-overlay">
-                        <a href="img/core-img/map.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Schermata Mappe Interattive">
-                            <div class="port-hover-text">
-                                <h3>Mappe Interattive</h3>
-                                <h5>Esplora con facilità</h5>
-                            </div>
-                        </a>
-                    </div>
+      <div class="container-fluid">
+        <div class="row alazea-portfolio">
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp"
+            data-wow-delay="100ms"
+          >
+            <div
+              class="portfolio-thumbnail bg-img"
+              style="background-image: url(img/core-img/map.jpeg)"
+            ></div>
+            <div class="portfolio-hover-overlay">
+              <a
+                href="img/core-img/map.jpeg"
+                class="portfolio-img d-flex align-items-center justify-content-center"
+                title="Schermata Mappe Interattive"
+              >
+                <div class="port-hover-text">
+                  <h3>Mappe Interattive</h3>
+                  <h5>Esplora con facilità</h5>
                 </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/core-img/ric.jpeg);"></div>
-                    <div class="portfolio-hover-overlay">
-                        <a href="img/core-img/ric.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Schermata Riconoscimento Piante">
-                            <div class="port-hover-text">
-                                <h3>Riconoscimento Piante</h3>
-                                <h5>Identifica con una foto</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp" data-wow-delay="300ms">
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/18.jpg);"></div>
-                    <div class="portfolio-hover-overlay">
-                        <a href="img/core-img/gamef.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Schermata Gamification">
-                            <div class="port-hover-text">
-                                <h3>Gamification</h3>
-                                <h5>Sfide e Ricompense</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp" data-wow-delay="400ms">
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/19.jpg);"></div>
-                    <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/19.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Consultazione Offline">
-                            <div class="port-hover-text">
-                                <h3>Accesso Offline</h3>
-                                <h5>Info sempre con te</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+              </a>
             </div>
+          </div>
 
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp"
+            data-wow-delay="200ms"
+          >
+            <div
+              class="portfolio-thumbnail bg-img"
+              style="background-image: url(img/core-img/ric.jpeg)"
+            ></div>
+            <div class="portfolio-hover-overlay">
+              <a
+                href="img/core-img/ric.jpeg"
+                class="portfolio-img d-flex align-items-center justify-content-center"
+                title="Schermata Riconoscimento Piante"
+              >
+                <div class="port-hover-text">
+                  <h3>Riconoscimento Piante</h3>
+                  <h5>Identifica con una foto</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp"
+            data-wow-delay="300ms"
+          >
+            <div
+              class="portfolio-thumbnail bg-img"
+              style="background-image: url(img/bg-img/18.jpg)"
+            ></div>
+            <div class="portfolio-hover-overlay">
+              <a
+                href="img/core-img/gamef.jpeg"
+                class="portfolio-img d-flex align-items-center justify-content-center"
+                title="Schermata Gamification"
+              >
+                <div class="port-hover-text">
+                  <h3>Gamification</h3>
+                  <h5>Sfide e Ricompense</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp"
+            data-wow-delay="400ms"
+          >
+            <div
+              class="portfolio-thumbnail bg-img"
+              style="background-image: url(img/bg-img/19.jpg)"
+            ></div>
+            <div class="portfolio-hover-overlay">
+              <a
+                href="img/bg-img/19.jpg"
+                class="portfolio-img d-flex align-items-center justify-content-center"
+                title="Consultazione Offline"
+              >
+                <div class="port-hover-text">
+                  <h3>Accesso Offline</h3>
+                  <h5>Info sempre con te</h5>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-
-        
-
-
+      </div>
     </section>
     <section class="testimonial-area section-padding-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="testimonials-slides owl-carousel">
-
-                        <div class="single-testimonial-slide">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-thumb">
-                                        <img src="img/bg-img/13.jpg" alt="Utente soddisfatto">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="testimonial-content">
-                                        <div class="section-heading">
-                                            <h2>DICONO DI NOI</h2>
-                                            <p>Le parole di chi ha già esplorato i Monti Lattari insieme a noi</p>
-                                        </div>
-                                        <p>“Grazie a Fiori del Deserto ho scoperto che tante piante, anche quelle considerate erbacce, sono in realtà alla base della medicina moderna e possono essere utilissime nella prevenzione o cura di fastidi minori. Grazie a voi ho scopèerto che il giardino di casa mia è una farmacia a cielo aperto!”</p>
-                                        <div class="testimonial-author-info">
-                                            <h6>Mario Esposito</h6>
-                                            <p>Appassionato di Botanica</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="testimonials-slides owl-carousel">
+              <div class="single-testimonial-slide">
+                <div class="row align-items-center">
+                  <div class="col-12 col-md-6">
+                    <div class="testimonial-thumb">
+                      <img src="img/bg-img/13.jpg" alt="Utente soddisfatto" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="testimonial-content">
+                      <div class="section-heading">
+                        <h2>DICONO DI NOI</h2>
+                        <p>
+                          Le parole di chi ha già esplorato i Monti Lattari
+                          insieme a noi
+                        </p>
+                      </div>
+                      <p>
+                        “Grazie a Fiori del Deserto ho scoperto che tante
+                        piante, anche quelle considerate erbacce, sono in realtà
+                        alla base della medicina moderna e possono essere
+                        utilissime nella prevenzione o cura di fastidi minori.
+                        Grazie a voi ho scopèerto che il giardino di casa mia è
+                        una farmacia a cielo aperto!”
+                      </p>
+                      <div class="testimonial-author-info">
+                        <h6>Mario Esposito</h6>
+                        <p>Appassionato di Botanica</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <section id="scopri-app" class="new-arrivals-products-area bg-gray section-padding-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Esplora le Caratteristiche Uniche</h2>
-                        <p>Ogni funzionalità è pensata per arricchire la tua avventura botanica.</p>
-                    </div>
-                </div>
+    <section
+      id="scopri-app"
+      class="new-arrivals-products-area bg-gray section-padding-100"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center">
+              <h2>Esplora le Caratteristiche Uniche</h2>
+              <p>
+                Ogni funzionalità è pensata per arricchire la tua avventura
+                botanica.
+              </p>
             </div>
-
-            <div class="row">
-
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="product-img">
-                            <a href="#esplora"><img src="img/bg-img/9.jpg" alt="Mappe interattive"></a>
-                            <div class="product-tag">
-                                <a href="#">Esplora</a>
-                            </div>
-                        </div>
-                        <div class="product-info mt-15 text-center">
-                            <a href="#esplora">
-                                <p>Mappe Interattive Dettagliate</p>
-                            </a>
-                            <h6>Naviga con precisione</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="product-img">
-                            <a href="#identifica"><img src="img/bg-img/10.jpg" alt="Riconoscimento fotografico"></a>
-                             <div class="product-tag">
-                                <a href="#">Identifica</a>
-                            </div>
-                        </div>
-                        <div class="product-info mt-15 text-center">
-                            <a href="#identifica">
-                                <p>Riconoscimento Fotografico IA</p>
-                            </a>
-                            <h6>Scopri ogni specie</h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="product-img">
-                            <a href="#gamification"><img src="img/bg-img/11.jpg" alt="Gamification"></a>
-                            <div class="product-tag">
-                                <a href="#">Gioca</a>
-                            </div>
-                        </div>
-                        <div class="product-info mt-15 text-center">
-                            <a href="#gamification">
-                                <p>Sistema di Punti e Premi</p>
-                            </a>
-                            <h6>Mettiti alla prova</h6>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
-                        <div class="product-img">
-                            <a href="#offline"><img src="img/bg-img/12.jpg" alt="Dati Offline"></a>
-                            <div class="product-tag">
-                                <a href="#">Offline</a>
-                            </div>
-                        </div>
-                        <div class="product-info mt-15 text-center">
-                            <a href="#offline">
-                                <p>Accesso Dati Senza Rete</p>
-                            </a>
-                            <h6>Libertà di esplorare</h6>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="single-product-area mb-50 wow fadeInUp"
+              data-wow-delay="100ms"
+            >
+              <div class="product-img">
+                <a href="#esplora"
+                  ><img src="img/bg-img/9.jpg" alt="Mappe interattive"
+                /></a>
+                <div class="product-tag">
+                  <a href="#">Esplora</a>
+                </div>
+              </div>
+              <div class="product-info mt-15 text-center">
+                <a href="#esplora">
+                  <p>Mappe Interattive Dettagliate</p>
+                </a>
+                <h6>Naviga con precisione</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="single-product-area mb-50 wow fadeInUp"
+              data-wow-delay="200ms"
+            >
+              <div class="product-img">
+                <a href="#identifica"
+                  ><img
+                    src="img/bg-img/10.jpg"
+                    alt="Riconoscimento fotografico"
+                /></a>
+                <div class="product-tag">
+                  <a href="#">Identifica</a>
+                </div>
+              </div>
+              <div class="product-info mt-15 text-center">
+                <a href="#identifica">
+                  <p>Riconoscimento Fotografico IA</p>
+                </a>
+                <h6>Scopri ogni specie</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="single-product-area mb-50 wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div class="product-img">
+                <a href="#gamification"
+                  ><img src="img/bg-img/11.jpg" alt="Gamification"
+                /></a>
+                <div class="product-tag">
+                  <a href="#">Gioca</a>
+                </div>
+              </div>
+              <div class="product-info mt-15 text-center">
+                <a href="#gamification">
+                  <p>Sistema di Punti e Premi</p>
+                </a>
+                <h6>Mettiti alla prova</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="single-product-area mb-50 wow fadeInUp"
+              data-wow-delay="400ms"
+            >
+              <div class="product-img">
+                <a href="#offline"
+                  ><img src="img/bg-img/12.jpg" alt="Dati Offline"
+                /></a>
+                <div class="product-tag">
+                  <a href="#">Offline</a>
+                </div>
+              </div>
+              <div class="product-info mt-15 text-center">
+                <a href="#offline">
+                  <p>Accesso Dati Senza Rete</p>
+                </a>
+                <h6>Libertà di esplorare</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="blog-area" class="alazea-blog-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>News</h2>
-                        <p>Aggiornamenti, scoperte botaniche e novità sull'app Fiori del Deserto.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center">
+              <h2>News</h2>
+              <p>
+                Aggiornamenti, scoperte botaniche e novità sull'app Fiori del
+                Deserto.
+              </p>
             </div>
-
-            <div class="row justify-content-center">
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-post mb-100">
-                        <div class="post-thumbnail mb-30">
-                            <a href="single-post.html"><img src="img/bg-img/6.jpg" alt=""></a>
-                        </div>
-                        <div class="post-content">
-                            <a href="single-post.html" class="post-title">
-                                <h5>Le ultime scoperte botaniche nel Deserto XYZ</h5>
-                            </a>
-                            <div class="post-meta">
-                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 15 Mag 2024</a>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a>
-                            </div>
-                            <p class="post-excerpt">Un riassunto delle recenti spedizioni e delle specie rare documentate grazie a Fiori del Deserto...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-post mb-100">
-                        <div class="post-thumbnail mb-30">
-                            <a href="single-post.html"><img src="img/bg-img/7.jpg" alt=""></a>
-                        </div>
-                        <div class="post-content">
-                            <a href="single-post.html" class="post-title">
-                                <h5>Gamification e apprendimento botanico</h5>
-                            </a>
-                            <div class="post-meta">
-                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Mag 2024</a>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Dr. Verde</a>
-                            </div>
-                            <p class="post-excerpt">Analisi di come Fiori del Deserto utilizza meccaniche di gioco per incentivare la scoperta e la conoscenza...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-post mb-100">
-                        <div class="post-thumbnail mb-30">
-                            <a href="single-post.html"><img src="img/bg-img/8.jpg" alt=""></a>
-                        </div>
-                        <div class="post-content">
-                            <a href="single-post.html" class="post-title">
-                                <h5>Nuova Funzionalità: Mappatura sentieri</h5>
-                            </a>
-                            <div class="post-meta">
-                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 05 Mag 2024</a>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a>
-                            </div>
-                            <p class="post-excerpt">Siamo entusiasti di annunciare l'arrivo della mappatura collaborativa. Ora gli utenti possono contribuire...</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="single-blog-post mb-100">
+              <div class="post-thumbnail mb-30">
+                <a href="single-post.html"
+                  ><img src="img/bg-img/6.jpg" alt=""
+                /></a>
+              </div>
+              <div class="post-content">
+                <a href="single-post.html" class="post-title">
+                  <h5>Le ultime scoperte botaniche nel Deserto XYZ</h5>
+                </a>
+                <div class="post-meta">
+                  <a href="#"
+                    ><i class="fa fa-clock-o" aria-hidden="true"></i> 15 Mag
+                    2024</a
+                  >
+                  <a href="#"
+                    ><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a
+                  >
+                </div>
+                <p class="post-excerpt">
+                  Un riassunto delle recenti spedizioni e delle specie rare
+                  documentate grazie a Fiori del Deserto...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="single-blog-post mb-100">
+              <div class="post-thumbnail mb-30">
+                <a href="single-post.html"
+                  ><img src="img/bg-img/7.jpg" alt=""
+                /></a>
+              </div>
+              <div class="post-content">
+                <a href="single-post.html" class="post-title">
+                  <h5>Gamification e apprendimento botanico</h5>
+                </a>
+                <div class="post-meta">
+                  <a href="#"
+                    ><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Mag
+                    2024</a
+                  >
+                  <a href="#"
+                    ><i class="fa fa-user" aria-hidden="true"></i> Dr. Verde</a
+                  >
+                </div>
+                <p class="post-excerpt">
+                  Analisi di come Fiori del Deserto utilizza meccaniche di gioco
+                  per incentivare la scoperta e la conoscenza...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="single-blog-post mb-100">
+              <div class="post-thumbnail mb-30">
+                <a href="single-post.html"
+                  ><img src="img/bg-img/8.jpg" alt=""
+                /></a>
+              </div>
+              <div class="post-content">
+                <a href="single-post.html" class="post-title">
+                  <h5>Nuova Funzionalità: Mappatura sentieri</h5>
+                </a>
+                <div class="post-meta">
+                  <a href="#"
+                    ><i class="fa fa-clock-o" aria-hidden="true"></i> 05 Mag
+                    2024</a
+                  >
+                  <a href="#"
+                    ><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a
+                  >
+                </div>
+                <p class="post-excerpt">
+                  Siamo entusiasti di annunciare l'arrivo della mappatura
+                  collaborativa. Ora gli utenti possono contribuire...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="subscribe-newsletter-area" style="background-image: url(img/bg-img/subscribe.png);">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-lg-5">
-                    <div class="section-heading mb-0">
-                        <h2>Rimani Aggiornato</h2>
-                        <p>Iscriviti alla nostra newsletter per novità sull'app, eventi e scoperte dal mondo della botanica.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="subscribe-form">
-                        <form action="#" method="get">
-                            <input type="email" name="subscribe-email" id="subscribeEmail" placeholder="Inserisci la tua email">
-                            <button type="submit" class="btn alazea-btn">ISCRIVITI</button>
-                        </form>
-                    </div>
-                </div>
+    <section
+      class="subscribe-newsletter-area"
+      style="background-image: url(img/bg-img/subscribe.png)"
+    >
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-lg-5">
+            <div class="section-heading mb-0">
+              <h2>Rimani Aggiornato</h2>
+              <p>
+                Iscriviti alla nostra newsletter per novità sull'app, eventi e
+                scoperte dal mondo della botanica.
+              </p>
             </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="subscribe-form">
+              <form action="#" method="get">
+                <input
+                  type="email"
+                  name="subscribe-email"
+                  id="subscribeEmail"
+                  placeholder="Inserisci la tua email"
+                />
+                <button type="submit" class="btn alazea-btn">ISCRIVITI</button>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="subscribe-side-thumb wow fadeInUp" data-wow-delay="500ms">
-            <img class="first-img" src="img/core-img/leaf.png" alt="">
-        </div>
+      <div class="subscribe-side-thumb wow fadeInUp" data-wow-delay="500ms">
+        <img class="first-img" src="img/core-img/leaf.png" alt="" />
+      </div>
     </section>
     <section id="contact-area" class="contact-area section-padding-100-0">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12 col-lg-5">
-                    <div class="section-heading">
-                        <h2>Contattaci</h2>
-                        <p>Hai domande, suggerimenti o vuoi collaborare? Scrivici!</p>
-                    </div>
-                    <div class="contact-form-area mb-100">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="contact-name" placeholder="Il Tuo Nome">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="contact-email" placeholder="La Tua Email">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="contact-subject" placeholder="Oggetto">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Messaggio"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn alazea-btn mt-15">Invia Messaggio</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6">
-                    <div class="map-area mb-100">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d95956.42369344778!2d14.536453476585748!3d40.66546442436972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1747664994598!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-lg-5">
+            <div class="section-heading">
+              <h2>Contattaci</h2>
+              <p>Hai domande, suggerimenti o vuoi collaborare? Scrivici!</p>
             </div>
-        </div>
-    </section>
-    <footer class="footer-area bg-img" style="background-image: url(img/bg-img/3.jpg);">
-        <div class="main-footer-area">
-            <div class="container">
+            <div class="contact-form-area mb-100">
+              <form action="#" method="post">
                 <div class="row">
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget" id="contatti">
-                            <div class="footer-logo mb-30">
-                                <a href="index.html"><img src="img/core-img/logo.png" alt="Logo Fiori del Deserto"></a>
-                            </div>
-                            <p>Esplora il mondo della botanica con Fiori del Deserto. Identifica, impara e divertiti.</p>
-                            <div class="social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                 
-                            
-                            </div>
-                        </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="contact-name"
+                        placeholder="Il Tuo Nome"
+                      />
                     </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget">
-                            <div class="widget-title">
-                                <h5>LINK UTILI</h5>
-                            </div>
-                            <nav class="widget-nav">
-                                <ul>
-                                    <li><a href="#chi-siamo">Chi Siamo</a></li>
-                                    <li><a href="#funzionalita">Funzionalità</a></li>
-                                    <li><a href="https://fiorideldeserto.windsurf.build/install-pwa">Installa App</a></li>
-                                    <li><a href="#blog">Blog</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Termini di Servizio</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="contact-email"
+                        placeholder="La Tua Email"
+                      />
                     </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="contact-subject"
+                        placeholder="Oggetto"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Messaggio"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn alazea-btn mt-15">
+                      Invia Messaggio
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
 
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget">
-                            <div class="widget-title">
-                                <h5>FUNZIONALITÀ CHIAVE</h5>
-                            </div>
-                            <div class="single-best-seller-product d-flex align-items-center">
-                                <!-- <div class="product-thumbnail">
+          <div class="col-12 col-lg-6">
+            <div class="map-area mb-100">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d95956.42369344778!2d14.536453476585748!3d40.66546442436972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1747664994598!5m2!1sit!2sit"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="footer-area bg-img"
+      style="background-image: url(img/bg-img/3.jpg)"
+    >
+      <div class="main-footer-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="single-footer-widget" id="contatti">
+                <div class="footer-logo mb-30">
+                  <a href="index.html"
+                    ><img
+                      src="img/core-img/logo.png"
+                      alt="Logo Fiori del Deserto"
+                  /></a>
+                </div>
+                <p>
+                  Esplora il mondo della botanica con Fiori del Deserto.
+                  Identifica, impara e divertiti.
+                </p>
+                <div class="social-info">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="single-footer-widget">
+                <div class="widget-title">
+                  <h5>LINK UTILI</h5>
+                </div>
+                <nav class="widget-nav">
+                  <ul>
+                    <li><a href="#chi-siamo">Chi Siamo</a></li>
+                    <li><a href="#funzionalita">Funzionalità</a></li>
+                    <li>
+                      <a
+                        href="https://fiorideldeserto.windsurf.build/install-pwa"
+                        >Installa App</a
+                      >
+                    </li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Termini di Servizio</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="single-footer-widget">
+                <div class="widget-title">
+                  <h5>FUNZIONALITÀ CHIAVE</h5>
+                </div>
+                <div
+                  class="single-best-seller-product d-flex align-items-center"
+                >
+                  <!-- <div class="product-thumbnail">
                                     <a href="#esplora"></a>
                                 </div> -->
-                                <div class="product-info">
-                                    <a href="#esplora">Mappe Interattive</a>
-                                    <p>Esplora</p>
-                                </div>
-                            </div>
-                            <div class="single-best-seller-product d-flex align-items-center">
-                                <!-- <div class="product-thumbnail">
+                  <div class="product-info">
+                    <a href="#esplora">Mappe Interattive</a>
+                    <p>Esplora</p>
+                  </div>
+                </div>
+                <div
+                  class="single-best-seller-product d-flex align-items-center"
+                >
+                  <!-- <div class="product-thumbnail">
                                     <a href="#identifica"></a>
                                 </div> -->
-                                <div class="product-info">
-                                    <a href="#identifica">Riconoscimento Foto</a>
-                                    <p>Identifica</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget">
-                            <div class="widget-title">
-                                <h5>CONTATTI</h5>
-                            </div>
-                            <div class="contact-information">
-                                <p><span>Indirizzo:</span> Via della Botanica 123, Natura, Italia</p>
-                                <p><span>Tel:</span> +39 123 456 7890</p>
-                                <p><span>Email:</span> infofdd@example.com</p>
-                                <p><span>Orari Supporto:</span> Lun - Ven: 9 AM - 6 PM</p>
-                            </div>
-                        </div>
-                    </div>
+                  <div class="product-info">
+                    <a href="#identifica">Riconoscimento Foto</a>
+                    <p>Identifica</p>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
 
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="border-line"></div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="copywrite-text">
-                            <p> 
-                               © Copyright ©<script>document.write(new Date().getFullYear());</script> Tutti i diritti riservati | Fiori del Deserto
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="footer-nav">
-                            <nav>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">Chi Siamo</a></li>
-                                    <li><a href="#funzionalita">Funzionalità</a></li>
-                                    <li><a href="contact.html">Contatti</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="single-footer-widget">
+                <div class="widget-title">
+                  <h5>CONTATTI</h5>
                 </div>
+                <div class="contact-information">
+                  <p>
+                    <span>Indirizzo:</span> Via della Botanica 123, Natura,
+                    Italia
+                  </p>
+                  <p><span>Tel:</span> +39 123 456 7890</p>
+                  <p><span>Email:</span> infofdd@example.com</p>
+                  <p><span>Orari Supporto:</span> Lun - Ven: 9 AM - 6 PM</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+
+      <div class="footer-bottom-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="border-line"></div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="copywrite-text">
+                <p>
+                  © Copyright ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Tutti i diritti riservati | Fiori del Deserto
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="footer-nav">
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="#funzionalita">Funzionalità</a></li>
+                    <li><a href="contact.html">Contatti</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/plugins/plugins.js"></script>
     <script src="js/active.js"></script>
-</body>
-
-
+  </body>
 </html>
