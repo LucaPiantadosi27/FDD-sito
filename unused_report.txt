@@ -1,0 +1,15 @@
+fonts/classy.svg
+fonts/ElegantIcons.svg
+fonts/fontawesome-webfont.svg
+img/bg-img/29.jpg
+img/bg-img/44.png
+img/bg-img/45.png
+img/bg-img/46.png
+img/bg-img/47.png
+img/bg-img/48.png
+img/core-img/fioriDelDeserto-logo.png
+img/core-img/offl.jpeg
+img/footer/best-seller-1.jpg
+img/footer/best-seller-2.jpg
+img/footer/footer-bg.jpg
+img/footer/logo.png
