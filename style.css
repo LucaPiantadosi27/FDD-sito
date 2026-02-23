@@ -543,6 +543,10 @@ img {
   line-height: 1;
 }
 
+.header-area .alazea-main-menu .classy-navbar .nav-brand img {
+  max-height: 70px;
+}
+
 @media only screen and (max-width: 767px) {
   .header-area .alazea-main-menu .classy-navbar {
     height: 70px;
@@ -2619,6 +2623,10 @@ img {
   position: relative;
   z-index: 1;
   margin-bottom: 70px;
+}
+
+.footer-area .single-footer-widget .footer-logo img {
+  max-width: 180px;
 }
 
 .footer-area .single-footer-widget p {
