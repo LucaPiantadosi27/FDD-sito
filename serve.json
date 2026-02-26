@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/:id/news-details",
+      "destination": "/news-details.html"
+    }
+  ]
+}
