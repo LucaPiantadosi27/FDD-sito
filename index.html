@@ -775,71 +775,18 @@
         </div>
       </div>
 
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="single-blog-post mb-100">
-            <div class="post-thumbnail mb-30">
-              <a href="single-post.html"><img src="img/bg-img/6.jpg" alt="" /></a>
-            </div>
-            <div class="post-content">
-              <a href="single-post.html" class="post-title">
-                <h5>Le ultime scoperte botaniche nel Deserto XYZ</h5>
-              </a>
-              <div class="post-meta">
-                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 15 Mag
-                  2024</a>
-                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a>
-              </div>
-              <p class="post-excerpt">
-                Un riassunto delle recenti spedizioni e delle specie rare
-                documentate grazie a Fiori del Deserto...
-              </p>
-            </div>
+      <div class="row justify-content-center" id="homepage-news-container">
+        <!-- News items will be loaded here via JS -->
+        <div class="col-12 text-center" id="homepage-news-loader">
+          <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Caricamento...</span>
           </div>
         </div>
+      </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="single-blog-post mb-100">
-            <div class="post-thumbnail mb-30">
-              <a href="single-post.html"><img src="img/bg-img/7.jpg" alt="" /></a>
-            </div>
-            <div class="post-content">
-              <a href="single-post.html" class="post-title">
-                <h5>Gamification e apprendimento botanico</h5>
-              </a>
-              <div class="post-meta">
-                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 10 Mag
-                  2024</a>
-                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Dr. Verde</a>
-              </div>
-              <p class="post-excerpt">
-                Analisi di come Fiori del Deserto utilizza meccaniche di gioco
-                per incentivare la scoperta e la conoscenza...
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="single-blog-post mb-100">
-            <div class="post-thumbnail mb-30">
-              <a href="single-post.html"><img src="img/bg-img/8.jpg" alt="" /></a>
-            </div>
-            <div class="post-content">
-              <a href="single-post.html" class="post-title">
-                <h5>Nuova Funzionalità: Mappatura sentieri</h5>
-              </a>
-              <div class="post-meta">
-                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 05 Mag
-                  2024</a>
-                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a>
-              </div>
-              <p class="post-excerpt">
-                Siamo entusiasti di annunciare l'arrivo della mappatura
-                collaborativa. Ora gli utenti possono contribuire...
-              </p>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-12 text-center mb-100">
+          <a href="news.html" class="btn alazea-btn">Scopri tutte le news</a>
         </div>
       </div>
     </div>
@@ -1075,7 +1022,59 @@
   <script src="js/bootstrap/popper.min.js"></script>
   <script src="js/bootstrap/bootstrap.min.js"></script>
   <script src="js/plugins/plugins.js"></script>
+  <script src="js/config.js"></script>
   <script src="js/active.js"></script>
+
+  <!-- Homepage News Fetching -->
+  <script>
+    $(document).ready(function () {
+      const apiUrl = window.env.API_URL;
+
+      $.ajax({
+        url: apiUrl + "/news",
+        type: "GET",
+        success: function (response) {
+          $('#homepage-news-loader').remove();
+          const newsList = response.data || response;
+
+          if (Array.isArray(newsList) && newsList.length > 0) {
+            // Take only the first 3 news items
+            const latestNews = newsList.slice(0, 3);
+
+            latestNews.forEach(function (news) {
+              const newsHtml = `
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-blog-post mb-100">
+                    <div class="post-thumbnail mb-30">
+                      <a href="${news.id}/news-details"><img src="${news.image_url}" alt="${news.title}"></a>
+                    </div>
+                    <div class="post-content">
+                      <a href="${news.id}/news-details" class="post-title">
+                        <h5>${news.title}</h5>
+                      </a>
+                      <div class="post-meta">
+                        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> ${news.created_at}</a>
+                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a>
+                      </div>
+                      <p class="post-excerpt">${news.excerpt}</p>
+                    </div>
+                  </div>
+                </div>
+              `;
+              $('#homepage-news-container').append(newsHtml);
+            });
+          } else {
+            $('#homepage-news-container').html('<div class="col-12 text-center"><p>Nessuna news disponibile.</p></div>');
+          }
+        },
+        error: function (xhr, status, error) {
+          $('#homepage-news-loader').remove();
+          $('#homepage-news-container').html('<div class="col-12 text-center"><p class="text-danger">Impossibile caricare le news.</p></div>');
+          console.error("Home API Error:", error);
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
