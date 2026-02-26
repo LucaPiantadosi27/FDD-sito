@@ -344,31 +344,44 @@
                         // Try to format the date if it's ISO, otherwise use it as is
                         let dateLabel = news.created_at;
                         try {
-                            if (dateLabel.includes('T')) {
-                                dateLabel = new Date(dateLabel).toLocaleString('it-IT', {
-                                    day: '2-digit',
-                                    month: '2-digit',
-                                    year: 'numeric',
-                                    hour: '2-digit',
-                                    minute: '2-digit'
-                                });
+                            if (dateLabel && (dateLabel.includes('T') || dateLabel.includes('-'))) {
+                                const dateObj = new Date(dateLabel);
+                                if (!isNaN(dateObj.getTime())) {
+                                    dateLabel = dateObj.toLocaleString('it-IT', {
+                                        day: '2-digit',
+                                        month: '2-digit',
+                                        year: 'numeric',
+                                        hour: '2-digit',
+                                        minute: '2-digit'
+                                    });
+                                }
                             }
                         } catch (e) {
                             console.error("Date formatting error:", e);
                         }
 
-                        const detailHtml = `
-                            <div class="post-content">
-                                <h4 class="post-title">${news.title}</h4>
-                                <div class="post-meta mb-30">
-                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> ${dateLabel}</a>
-                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a>
-                                </div>
+                        let imageHtml = '';
+                        if (news.image_url) {
+                            imageHtml = `
                                 <div class="post-thumbnail mb-30 text-center">
                                     <img src="${news.image_url}" alt="${news.title}" style="max-height: 500px; width: auto;">
                                 </div>
+                            `;
+                        }
+
+                        const detailHtml = `
+                            <div class="post-content">
+                                <h4 class="post-title">${news.title || ''}</h4>
+                                <div class="post-meta mb-30">
+                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> ${dateLabel || ''}</a>
+                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a>
+                                </div>
+                                ${imageHtml}
+                                <div class="post-excerpt mb-30">
+                                    <strong>${news.excerpt || ''}</strong>
+                                </div>
                                 <div class="post-body">
-                                    ${news.body}
+                                    ${news.body || ''}
                                 </div>
                                 ${attachmentsHtml}
                             </div>

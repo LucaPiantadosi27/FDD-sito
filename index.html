@@ -1042,21 +1042,28 @@
             const latestNews = newsList.slice(0, 3);
 
             latestNews.forEach(function (news) {
+              let imageHtml = '';
+              if (news.image_url) {
+                imageHtml = `
+                  <div class="post-thumbnail mb-30">
+                    <a href="${news.id}/news-details"><img src="${news.image_url}" alt="${news.title}"></a>
+                  </div>
+                `;
+              }
+
               const newsHtml = `
                 <div class="col-12 col-md-6 col-lg-4">
                   <div class="single-blog-post mb-100">
-                    <div class="post-thumbnail mb-30">
-                      <a href="${news.id}/news-details"><img src="${news.image_url}" alt="${news.title}"></a>
-                    </div>
+                    ${imageHtml}
                     <div class="post-content">
                       <a href="${news.id}/news-details" class="post-title">
-                        <h5>${news.title}</h5>
+                        <h5>${news.title || ''}</h5>
                       </a>
                       <div class="post-meta">
-                        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> ${news.created_at}</a>
+                        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> ${news.created_at || ''}</a>
                         <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Team FDD</a>
                       </div>
-                      <p class="post-excerpt">${news.excerpt}</p>
+                      <p class="post-excerpt">${news.excerpt || ''}</p>
                     </div>
                   </div>
                 </div>
