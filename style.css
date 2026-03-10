@@ -245,10 +245,14 @@ img {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.preloader .preloader-img img {
-  max-width: 60px;
+.preloader-img img {
+  max-width: 45px;
+  /* Reverting to original smaller size for better fit in circle */
 }
 
 @-webkit-keyframes zoom {
