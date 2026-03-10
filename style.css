@@ -248,7 +248,7 @@ img {
 }
 
 .preloader .preloader-img img {
-  max-width: 45px;
+  max-width: 60px;
 }
 
 @-webkit-keyframes zoom {
