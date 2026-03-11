@@ -1062,6 +1062,16 @@
 
 <!-- Homepage Hero Slides -->
 <script>
+  function escHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   $(document).ready(function () {
     const apiUrl = window.env.API_URL;
     const $carousel = $('.hero-post-slides');
@@ -1076,10 +1086,10 @@
         $carousel.empty();
         slides.forEach(function (slide) {
           const ctaBtn = slide.cta_label && slide.cta_url
-            ? '<a href="' + slide.cta_url + '" class="btn alazea-btn active">' + slide.cta_label + '</a>'
+            ? '<a href="' + slide.cta_url + '" class="btn alazea-btn active">' + escHtml(slide.cta_label) + '</a>'
             : '';
-          const titleHtml = slide.title ? '<h2>' + slide.title + '</h2>' : '';
-          const subtitleHtml = slide.subtitle ? '<p>' + slide.subtitle + '</p>' : '';
+          const titleHtml = slide.title ? '<h2>' + escHtml(slide.title) + '</h2>' : '';
+          const subtitleHtml = slide.subtitle ? '<p>' + escHtml(slide.subtitle) + '</p>' : '';
 
           const html =
             '<div class="single-hero-post">' +
@@ -1139,11 +1149,11 @@
             '<div class="col-12 col-sm-6 col-lg-3">' +
               '<div class="single-team-member text-center mb-100">' +
                 '<div class="team-member-thumb">' +
-                  '<img src="' + member.photo_url + '" alt="' + member.name + '" />' +
+                  '<img src="' + member.photo_url + '" alt="' + escHtml(member.name) + '" />' +
                 '</div>' +
                 '<div class="team-member-info mt-30">' +
-                  '<h5>' + member.name + '</h5>' +
-                  '<p>' + member.role + '</p>' +
+                  '<h5>' + escHtml(member.name) + '</h5>' +
+                  '<p>' + escHtml(member.role) + '</p>' +
                 '</div>' +
               '</div>' +
             '</div>';
@@ -1173,7 +1183,7 @@
         $slider.empty();
         testimonials.forEach(function (t) {
           const photoHtml = t.photo_url
-            ? '<img src="' + t.photo_url + '" alt="' + t.name + '" />'
+            ? '<img src="' + t.photo_url + '" alt="' + escHtml(t.name) + '" />'
             : '';
 
           const html =
@@ -1188,9 +1198,9 @@
                       '<h2>DICONO DI NOI</h2>' +
                       '<p>Le parole di chi ha già esplorato i Monti Lattari insieme a noi</p>' +
                     '</div>' +
-                    '<p>"' + t.quote + '"</p>' +
+                    '<p>"' + escHtml(t.quote) + '"</p>' +
                     '<div class="testimonial-author-info">' +
-                      '<h6>' + t.name + '</h6>' +
+                      '<h6>' + escHtml(t.name) + '</h6>' +
                     '</div>' +
                   '</div>' +
                 '</div>' +
@@ -1231,14 +1241,14 @@
         $('#showcase-container').empty();
         items.forEach(function (item, index) {
           const delay = (index + 1) * 100;
-          const descHtml = item.description ? '<h5>' + item.description + '</h5>' : '';
+          const descHtml = item.description ? '<h5>' + escHtml(item.description) + '</h5>' : '';
           const html =
             '<div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp" data-wow-delay="' + delay + 'ms">' +
               '<div class="portfolio-thumbnail bg-img" style="background-image: url(' + item.image_url + ')"></div>' +
               '<div class="portfolio-hover-overlay">' +
-                '<a href="' + item.image_url + '" class="portfolio-img d-flex align-items-center justify-content-center" title="' + item.title + '">' +
+                '<a href="' + item.image_url + '" class="portfolio-img d-flex align-items-center justify-content-center" title="' + escHtml(item.title) + '">' +
                   '<div class="port-hover-text">' +
-                    '<h3>' + item.title + '</h3>' +
+                    '<h3>' + escHtml(item.title) + '</h3>' +
                     descHtml +
                   '</div>' +
                 '</a>' +
