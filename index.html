@@ -1083,6 +1083,10 @@
         const slides = response.data || [];
         if (slides.length === 0) return;
 
+        // Distrugge l'istanza OWL inizializzata da active.js prima di svuotare
+        var owlHero = $carousel.data('owl.carousel');
+        if (owlHero) { owlHero.destroy(); }
+        $carousel.removeClass('owl-loaded owl-drag owl-grab');
         $carousel.empty();
         slides.forEach(function (slide) {
           const ctaBtn = slide.cta_label && slide.cta_url
@@ -1180,6 +1184,10 @@
         const testimonials = response.data || [];
         if (testimonials.length === 0) return;
 
+        // Distrugge l'istanza OWL inizializzata da active.js prima di svuotare
+        var owlTesti = $slider.data('owl.carousel');
+        if (owlTesti) { owlTesti.destroy(); }
+        $slider.removeClass('owl-loaded owl-drag owl-grab');
         $slider.empty();
         testimonials.forEach(function (t) {
           const photoHtml = t.photo_url
@@ -1257,7 +1265,13 @@
           $('#showcase-container').append(html);
         });
 
-        $('#showcase-container .portfolio-img').magnificPopup({ type: 'image' });
+        // Re-inizializza Magnific Popup sui nuovi elementi
+        $('#showcase-container .portfolio-img').magnificPopup({ type: 'image', gallery: { enabled: true } });
+
+        // Re-inizializza Isotope dopo il popolamento dinamico
+        if ($.fn.isotope) {
+          $('#showcase-container').isotope('reloadItems').isotope({ itemSelector: '.single_portfolio_item' });
+        }
       },
       error: function () {
         console.warn('Homepage showcase: impossibile caricare da API');
